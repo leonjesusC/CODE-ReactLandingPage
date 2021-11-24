@@ -9,7 +9,18 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Navy from "./component/navbar.jsx";
+import Jumbo from "./component/jumbotron.jsx";
+import Cardy from "./component/cards.jsx";
+import Foot from "./component/footer.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<div>
+		<Navy thyme="gray" />
+		<Jumbo />
+		<Cardy />
+		<Foot />
+	</div>,
+	document.querySelector("#app")
+);
